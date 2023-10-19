@@ -1,0 +1,89 @@
+def ask_name():
+    name= input ("Как вас зовут: ")
+   
+    print ( "Привет ", name) 
+
+def ask_age():
+    age = int(input("Сколько вам лет: "))
+
+    if age < 10:
+        print("Вы маленький")
+    elif age < 18:
+        print("Вы подросток")    
+    elif age < 100:
+        print("Вы взрослый")   
+    else:
+        print("Вы очень взрослый")     
+
+
+   
+# def play_game():
+    # import random 
+
+    # comp = random.choice(["Камень" , "Ножницы" ,"Бумага" ])
+    # player = input("Выберите фигуру: ")
+
+    # print("Комп выбрал" , comp)
+
+    # if player == "камень":
+    #     if comp == "Камень":
+    #         print ("ничья!")
+    #     elif comp == "Ножницы":
+    #         print("Победа ваша!")  
+    #     else:
+    #         print("Вы проиграли!")   
+
+            
+    # if player == "бумага":
+    #     if comp == "Камень":
+    #         print ("Победа ваша!")
+    #     elif comp == "Ножницы":
+    #         print("Вы проиграли!")  
+    #     else:
+    #         print("Ничья!")   
+
+
+    # if player == "ножницы":
+    #     if comp == "Камень":
+    #         print ("Вы проиграли!")
+    #     elif comp == "Ножницы":
+    #         print("Ничья!")  
+    #     else:
+    #         print("Победа ваша!")   
+
+def times (num1,num2):
+    return num1 * num2
+
+print (times(7,7))    
+
+count = 0
+while count <10 :
+    print(count)
+    count = count + 1
+    if  count == 3:
+        break
+
+import random   
+    
+guess = random.randint(0, 100)  
+
+while True:
+    num = int(input("Угадай число: "))
+    # если num меньше guess распечатать "выберите больше" если num 
+    #меньше guess распечатать "выберите меньше" есди num равен 
+    # guess распечатать "вы угадали" и остановить цикл
+   
+    
+   
+
+    if num < guess:
+        print("выберите больше")
+    elif num > guess:
+        print(" выберите меньше")    
+    elif num == guess:
+        print("вы угадали ")   
+        break
+    else:
+        print("Введите только цифру")     
+
+

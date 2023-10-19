@@ -1,0 +1,12 @@
+login = "newt1"
+password = "12345"
+
+new_login = input("Введте логин:")
+new_password = input("Введите пароль:")
+
+if  login != new_login:
+    print("Не правильный логин !!!")
+elif password != new_password:
+    print("Не правильный пароль!!!")
+else:
+    print("Добро пожаловать в наш мир!!!")    

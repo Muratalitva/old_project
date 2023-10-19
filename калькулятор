@@ -1,0 +1,22 @@
+while True :
+    try:
+        num1 =int(input("Введите первое число:"))
+        num2 =int(input("Введите второе число:"))
+        summa = input("Выберите один из вариантов <'+' , '-' , '*' , '/'>: ")
+
+        if summa == "+":
+            print(f"Ответ: {num1+num2}")
+        elif summa =="-":
+            print(f"Ответ: {num1-num2}")
+        elif summa == "*":
+            print(f"Ответ: {num1*num2}")
+        elif summa == "/":
+            print(f"Ответ: {num1/num2}")
+        else:
+            print("Выберите один из вариантов <'+' , '-' , '*' , '/'>: ")
+    
+    except:
+          print("Введите число ,не вводите букву")
+
+
+

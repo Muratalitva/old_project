@@ -1,0 +1,24 @@
+import random 
+
+def start_game():
+    massiv = [1,2,3,4,5,6,7,8,9,10]
+    lucky = random.choice(massiv)
+    num =int(input("Сделайте ставку : "))
+    my_money = 1000
+
+    if num == lucky:
+        my_money += num*2
+        print("Вы выиграли")
+    else:
+        my_money = my_money-num
+        print("Вы проиграли")
+
+    print("Хотите ли вы сыграть ещё раз?\n  Если да то отправьте + \n  Если нет отправьте -")
+    a = input (": ")
+    if a == "+":
+        start_game()
+    elif a == "-":
+        print(f"У вас осталось {my_money} денег")
+
+
+start_game()
